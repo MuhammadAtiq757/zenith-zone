@@ -7,7 +7,7 @@ const Benefit = () => {
     return (
         <div className='pt-[150px]'>
 
-            <div className='grid md:grid-cols-2 gap-4'>
+            <div className='grid md:grid-cols-2 gap-4 '>
 
                 {/* image-section */}
                 <div>
@@ -15,7 +15,7 @@ const Benefit = () => {
                 </div>
 
                 {/* content-section */}
-                <div className='text-start'>
+                <div className='text-start pl-6'>
 <div className='px-4'>
     <p className='text-blue-400'>WHY OUR PROBLEM?</p>
     <h1 className='text-4xl font-serif font-semibold pt-2'>Benefits</h1>

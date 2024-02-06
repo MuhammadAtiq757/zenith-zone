@@ -16,10 +16,10 @@ const Banner = () => {
 <p className='text-gray-600 pt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
  Velit reprehenderit ducimus soluta nihil magnam nulla?</p>
 
- <div className="join mt-6"> 
+ <div className="join mt-6 "> 
 
-  <input className="input input-bordered join-item"  placeholder="Email"/>
-  <button className="join-item  p-2 text-white bg-[#4e79b9]">Subscribe</button>
+  <input className="input input-bordered join-item w-[170px]"  placeholder="Email"/>
+  <button className="join-item  p-2 text-white bg-[#4e79b9] ">Subscribe</button>
 </div>
 </div>
 

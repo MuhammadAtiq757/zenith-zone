@@ -25,71 +25,46 @@ export default function App() {
 
 
 
-      <Swiper 
-        onSwiper={setSwiperRef}
-        slidesPerView={3}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          type: 'fraction',
-        }}
-        navigation={true}
-        modules={[ Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide className=''>
-       <div className='bg-gray-200  p-6'>
+    
+ <div className='grid md:grid-cols-4 gap-4 items-center justify-center px-8'>
+ <div className='bg-gray-100 rounded-lg shadow-lg text-center  p-6'>
        <IoGitNetwork className='mx-auto text-4xl text-blue-600 font-bold' />
-       <h3 className='mt-2 text-xl font-serif font-semibold'>Create Product Roadmap</h3>
+       <h3 className='mt-2 text-xl font-serif font-semibold pt-4'>Roadmap</h3>
        <p className='text-sm mt-2'>Lorem ipsum dolor, sit amet consectetur
          adipisicing elit. Illo, quasi.</p>
          <p className='mt-4 text-blue-500 text-sm'>Learn More...</p>
        </div>
-        </SwiperSlide>
 
 
-        <SwiperSlide>
-       <div className='bg-gray-200  p-6'>
+       <div className='bg-gray-100 rounded-lg shadow-lg text-center  p-6'>
        <MdOutlineSettings className='mx-auto text-4xl text-blue-600 font-bold' />
-       <h3 className='mt-2 text-xl font-serif font-semibold'>Create Product Roadmap</h3>
+       <h3 className='mt-2 text-xl font-serif font-semibold pt-4'> Settings</h3>
        <p className='text-sm mt-2'>Lorem ipsum dolor, sit amet consectetur
          adipisicing elit. Illo, quasi.</p>
          <p className='mt-4 text-blue-500 text-sm'>Learn More...</p>
        </div>
-        </SwiperSlide>
 
 
-        <SwiperSlide>
-       <div className='bg-gray-200  p-6'>
+       <div className='bg-gray-100 rounded-lg shadow-lg text-center  p-6'>
        <MdOutlineSystemUpdateAlt className='mx-auto text-4xl text-blue-600 font-bold' />
-       <h3 className='mt-2 text-xl font-serif font-semibold'>Create Product Roadmap</h3>
+       <h3 className='mt-2 text-xl font-serif font-semibold pt-4'>Update</h3>
        <p className='text-sm mt-2'>Lorem ipsum dolor, sit amet consectetur
          adipisicing elit. Illo, quasi.</p>
          <p className='mt-4 text-blue-500 text-sm'>Learn More...</p>
        </div>
-        </SwiperSlide>
 
 
-        <SwiperSlide>
-       <div className='bg-gray-200  p-6'>
+       <div className='bg-gray-100 rounded-lg shadow-lg text-center  p-6'>
        <FaFlag  className='mx-auto text-4xl text-blue-600 font-bold' />
-       <h3 className='mt-2 text-xl font-serif font-semibold'>Create Product Roadmap</h3>
+       <h3 className='mt-2 text-xl font-serif font-semibold pt-4'>Plan</h3>
        <p className='text-sm mt-2'>Lorem ipsum dolor, sit amet consectetur
          adipisicing elit. Illo, quasi.</p>
          <p className='mt-4 text-blue-500 text-sm'>Learn More...</p>
        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-       <div className='bg-gray-200  p-6'>
-       <IoGitNetwork className='mx-auto text-4xl text-blue-600 font-bold' />
-       <h3 className='mt-2 text-xl font-serif font-semibold'>Create Product Roadmap</h3>
-       <p className='text-sm mt-2'>Lorem ipsum dolor, sit amet consectetur
-         adipisicing elit. Illo, quasi.</p>
-         <p className='mt-4 text-blue-500 text-sm'>Learn More...</p>
-       </div>
-        </SwiperSlide>
        
-      </Swiper>
+ </div>
+    
+       
 
     
     </div>
