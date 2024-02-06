@@ -18,7 +18,7 @@ const Banner = () => {
 
  <div className="join mt-6 "> 
 
-  <input className="input input-bordered join-item w-[170px]"  placeholder="Email"/>
+  <input className="input input-bordered join-item w-[180px]"  placeholder="Email"/>
   <button className="join-item  p-2 text-white bg-[#4e79b9] ">Subscribe</button>
 </div>
 </div>
