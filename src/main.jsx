@@ -6,22 +6,23 @@ import {
 } from "react-router-dom";
 import { router } from './Route/Route';
 
-
-
+// const backgroundImageUrl = 'url("https://i.ibb.co/txSnGg9/Sky-blue-bubbles.jpg'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     
 
     <div className='max-w-7xl mx-auto'
-      style={{
-        backgroundImage: 'url("https://i.ibb.co/J51mRW4/f217d551-b22a-47b0-bc8e-302ce265e356.jpg")',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        width: '100%',
-       
-        
-      }}
+  style={{
+    // backgroundImage: backgroundImageUrl,
+   
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white', 
+  }}
     >
       <RouterProvider router={router} />
     </div>

@@ -5,7 +5,7 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 const Benefit = () => {
     return (
-        <div className='pt-[150px]'>
+        <div className='pt-[150px] bg-lime-200 pb-[100px]'>
 
             <div className='grid md:grid-cols-2 gap-4 '>
 
@@ -18,7 +18,7 @@ const Benefit = () => {
                 <div className='text-start pl-6'>
 <div className='px-4'>
     <p className='text-blue-400'>WHY OUR PROBLEM?</p>
-    <h1 className='text-4xl font-serif font-semibold pt-2'>Benefits</h1>
+    <h1 className='text-4xl font-serif text-black font-bold pt-2'>Benefits</h1>
     <p className='pt-2 text-sm text-gray-700 w-[300px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Iure quasi repudiandae quod.</p>
 </div>
 
