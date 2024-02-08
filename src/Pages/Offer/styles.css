@@ -3,9 +3,8 @@
 .card {
     width: 280px;
     color: white;
-   
-    margin: 10px;
-    padding-left: 5px;
+   text-align: center;
+  
     border-radius: 10px;
     overflow: hidden;
     position: relative;
