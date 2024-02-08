@@ -51,7 +51,7 @@ const Offer = () => {
                 </div>
 
 
-                <div className='  grid md:grid-cols-3 gap-2 mx-auto px-6 items-center justify-center  text-center  pt-24'>
+                <div className='  grid md:grid-cols-3 gap-4 mx-auto px-6 items-center justify-center  text-center  pt-24'>
                    
                     <div className='card justify-center items-center  p-3  rounded-lg broder border-1  bg-gray-100 shadow-lg border-y-2 border-blue-400 '>
                         <MdOutlineChromeReaderMode className='mx-auto text-5xl  mb-4 text-blue-600' />
