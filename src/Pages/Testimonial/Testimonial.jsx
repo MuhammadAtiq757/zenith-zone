@@ -13,7 +13,7 @@ import profile4 from '../../assets/Images/profile4.png'
 
 export default function App() {
     return (
-        <div className='px-[50px] pb-20 bg-purple-200 text-black'>
+        <div className='px-[50px] pb-20 bg-purple-100 text-black'>
  
  <div>
     <h1 className='text-center text-4xl font-serif font-semibold pt-[120px] pb-[50px]'><span className='text-blue-600'>Testi</span>monials</h1>

@@ -1,14 +1,15 @@
 import React from 'react';
 import banner from '../../assets/Images/banner.png'
+import './styles.css'
 
 
 const Banner = () => {
     return (
-        <div className='pt-16  bg-purple-300 ' >
+        <div className='pt-12   background-container' >
 
 
 
-<div className='grid md:grid-cols-2 gap-2 pb-20 px-[80px] '>
+<div className='grid md:grid-cols-2  pb-20 px-[60px] '>
 
 {/* content section */}
 <div className='mt-[80px] w-[300px] '>
@@ -17,7 +18,7 @@ const Banner = () => {
  Velit reprehenderit ducimus soluta nihil magnam nulla? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, qui.</p>
 
  <div className="join mt-6 w-[250px]">
-  <input className="input input-bordered join-item" placeholder="Email"/>
+  <input className="input input-bordered join-item bg-gray-100 " placeholder="Email"/>
   <button className="bg-gray-600 p-2 join-item ">Subscribe</button>
 </div>
 </div>
@@ -25,7 +26,7 @@ const Banner = () => {
 
 {/* image section */}
 <div className=''>
-<img className='mt-10 h-[380px]' src={banner} alt="" />
+<img className='mt-10 h-[370px] w-[600px]' src={banner} alt="" />
 
 </div>
 

@@ -5,7 +5,7 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 const Benefit = () => {
     return (
-        <div className='pt-[150px] bg-lime-200 pb-[100px]'>
+        <div className='pt-[150px] bg-orange-100  pb-[100px]'>
 
             <div className='grid md:grid-cols-2 gap-4 '>
 
@@ -23,11 +23,10 @@ const Benefit = () => {
 </div>
 
 <div className=' grid md:grid-cols-2 items-center justify-center px-2 gap-4 pt-8 mr-[50px] text-gray-700'>
-<p className='flex items-center justify-center gap-2 mr-14'><IoIosArrowDropdownCircle className='text-blue-600 text-5xl ' />Lorem ipsum dolor sit consectetur elit.</p>
-<p className='flex items-center justify-center gap-2 mr-14  mt-2'><IoIosArrowDropdownCircle className='text-blue-600 text-5xl ' />Lorem ipsum dolor sit consectetur elit.</p>
-<p className='flex items-center justify-center gap-2 mr-14  mt-2'><IoIosArrowDropdownCircle className='text-blue-600 text-5xl ' />Lorem ipsum dolor sit consectetur elit.</p>
-<p className='flex items-center justify-center gap-2 mr-14  mt-2'><IoIosArrowDropdownCircle className='text-blue-600 text-5xl ' />Lorem ipsum dolor sit consectetur elit.</p>
-
+<p className='flex  justify-center gap-2 mr-14  mt-2'><IoIosArrowDropdownCircle className='text-blue-600 text-2xl ' />Lorem ipsum dolor sit.</p>
+<p className='flex  justify-center gap-2 mr-14  mt-2'><IoIosArrowDropdownCircle className='text-blue-600 text-2xl ' />Lorem ipsum dolor sit.</p>
+<p className='flex  justify-center gap-2 mr-14  mt-2'><IoIosArrowDropdownCircle className='text-blue-600 text-2xl ' />Lorem ipsum dolor sit.</p>
+<p className='flex  justify-center gap-2 mr-14  mt-2'><IoIosArrowDropdownCircle className='text-blue-600 text-2xl ' />Lorem ipsum dolor sit.</p>
 </div>
 
                 </div>
