@@ -38,7 +38,7 @@ export default function App() {
   return (
     <div className='px-[50px] pb-20 bg-gray-100 text-black'>
       <div>
-        <h1 className='text-center text-4xl font-serif font-semibold pt-[120px] pb-[50px]'>
+        <h1 className='text-center text-4xl font-serif font-semibold pt-[70px] pb-[50px]'>
           <span className='text-blue-600'>Testimonials</span>
         </h1>
       </div>
