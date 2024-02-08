@@ -1,97 +1,73 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import './styles.css';
-import { Navigation } from 'swiper/modules';
-import profile from '../../assets/Images/profile.png'
-import profile1 from '../../assets/Images/profile1.png'
-import profile2 from '../../assets/Images/profile2.png'
-import profile3 from '../../assets/Images/profile3.png'
-import profile4 from '../../assets/Images/profile4.png'
-
+import React, { useState, useEffect } from 'react';
+import profile from '../../assets/Images/profile.png';
 
 export default function App() {
-    return (
-        <div className='px-[50px] pb-20 bg-purple-100 text-black'>
- 
- <div>
-    <h1 className='text-center text-4xl font-serif font-semibold pt-[120px] pb-[50px]'><span className='text-blue-600'>Testi</span>monials</h1>
- </div>
+  const [showMore, setShowMore] = useState(false);
+  const isMobile = window.innerWidth <= 768;
 
-            
+  useEffect(() => {
+    const handleResize = () => {
+      setShowMore(window.innerWidth <= 768);
+    };
 
-<div className='grid md:grid-cols-3 gap-8 px-4 items-center justify-center'>
-<div className='w-[285px] text-center shadow-lg p-6'>
-               <div className='w-32 mx-auto rounded-full pb-2'> <img src={profile} alt="" /></div>
+    window.addEventListener('resize', handleResize);
 
-                    <p className='w-[250px] text-sm font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos voluptas quisquam earum tempora
-                        </p>
-                      
-                        <h1 className='text-center pt-4 font-semibold font-serif'>Mrs Arriya</h1>
-               </div>
+    // Initial check on mount
+    handleResize();
 
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
-               <div className='w-[285px] text-center shadow-lg p-6'>
-               <div className='w-32 mx-auto  rounded-full pb-2'> <img src={profile} alt="" /></div>
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
 
-                    <p className='w-[250px] text-sm font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos voluptas quisquam earum tempora
-                       </p>
-                      
-                        <h1 className='text-center pt-4 font-semibold font-serif'>Mr Arriya</h1>
-               </div>
+  // Your card data
+  const cardData = [
+    { name: 'Mrs Arriya', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas quisquam earum tempora' },
+    { name: 'Mr Arriya', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas quisquam earum tempora' },
+    { name: 'Mrs Arriya', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas quisquam earum tempora' },
+    { name: 'Mr Arriya', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas quisquam earum tempora' },
+    { name: 'Mrs Arriya', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas quisquam earum tempora' },
+    { name: 'Mr Arriya', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptas quisquam earum tempora' },
+    // Add more data as needed
+  ];
 
+  return (
+    <div className='px-[50px] pb-20 bg-gray-100 text-black'>
+      <div>
+        <h1 className='text-center text-4xl font-serif font-semibold pt-[120px] pb-[50px]'>
+          <span className='text-blue-600'>Testimonials</span>
+        </h1>
+      </div>
 
+      <div className='grid md:grid-cols-3 gap-8 px-4 items-center justify-center'>
+        {/* Render all cards or only three/six cards based on the showMore state */}
+        {cardData.slice(0, showMore ? 3 : 6).map((item, index) => (
+          <div key={index} className='w-[285px] text-center shadow-lg p-6'>
+            <div className='w-32 mx-auto rounded-full pb-2'>
+              {' '}
+              <img src={profile} alt='' />
+            </div>
+            <p className='w-[250px] text-sm font-thin'>{item.description}</p>
+            <h1 className='text-center pt-4 font-semibold font-serif'>{item.name}</h1>
+          </div>
+        ))}
+      </div>
 
-               <div className='w-[285px] text-center shadow-lg p-6'>
-               <div className='w-32 mx-auto rounded-full pb-2'> <img src={profile} alt="" /></div>
-
-                    <p className='w-[250px] text-sm font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos voluptas quisquam earum tempora
-                        </p>
-                      
-                        <h1 className='text-center pt-4 font-semibold font-serif'>Mr Arriya</h1>
-               </div>
-
-
-
-
-               <div className='w-[285px] text-center shadow-lg p-6'>
-               <div className='w-32 mx-auto rounded-full pb-2'> <img src={profile} alt="" /></div>
-
-                    <p className='w-[250px] text-sm font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos voluptas quisquam earum tempora
-                       </p>
-                      
-                        <h1 className='text-center pt-4 font-semibold font-serif'>Mr Arriya</h1>
-               </div>
-               <div className='w-[285px] text-center shadow-lg p-6'>
-               <div className='w-32 mx-auto rounded-full pb-2'> <img src={profile} alt="" /></div>
-
-                    <p className='w-[250px] text-sm font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos voluptas quisquam earum tempora
-                       </p>
-                      
-                        <h1 className='text-center pt-4 font-semibold font-serif'>Mr Arriya</h1>
-               </div>
-               <div className='w-[285px] text-center shadow-lg p-6'>
-               <div className='w-32 mx-auto rounded-full pb-2'> <img src={profile} alt="" /></div>
-
-                    <p className='w-[250px] text-sm font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos voluptas quisquam earum tempora
-                       </p>
-                      
-                        <h1 className='text-center pt-4 font-semibold font-serif'>Mr Arriya</h1>
-               </div>
-             
-</div>
-            
-             
-
-            
+      {/* Render "Show More" button only on mobile devices */}
+      {isMobile && (
+        <div className='text-center mt-4'>
+          <button
+            className='bg-blue-500 text-white px-4 py-2 rounded-md'
+            onClick={toggleShowMore}
+          >
+            {showMore ? 'Show Less' : 'Show More'}
+          </button>
         </div>
-    );
+      )}
+    </div>
+  );
 }
-
