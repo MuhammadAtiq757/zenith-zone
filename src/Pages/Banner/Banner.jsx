@@ -5,7 +5,7 @@ import './styles.css'
 
 const Banner = () => {
     return (
-        <div className='pt-12   background-container' >
+        <div className='pt-8   background-container' >
 
 
 

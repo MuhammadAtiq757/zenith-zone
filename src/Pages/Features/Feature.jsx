@@ -25,7 +25,7 @@ export default function App() {
 
 
     
- <div className='grid md:grid-cols-4 gap-4 items-center text-black justify-center px-8'>
+ <div className='grid md:grid-cols-4 gap-4 items-center text-black justify-center px-4'>
  <div className='bg-white cards rounded-lg shadow-lg text-center  p-6'>
        <IoGitNetwork className='mx-auto text-4xl text-blue-600 font-bold' />
        <h3 className='mt-2 text-xl font-serif font-semibold pt-4'>Roadmap</h3>
