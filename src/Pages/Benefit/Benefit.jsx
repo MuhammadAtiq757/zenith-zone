@@ -5,7 +5,7 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 const Benefit = () => {
     return (
-        <div className='pt-[150px] bg-orange-100  pb-[100px]'>
+        <div className='pt-[150px] bg-white  pb-[100px]'>
 
             <div className='grid md:grid-cols-2 gap-4 '>
 
